@@ -1,0 +1,12 @@
+<map id="include/dictionary.h" name="include/dictionary.h">
+<area shape="rect" id="Node000001" title=" " alt="" coords="90,5,238,31"/>
+<area shape="rect" id="Node000002" href="$decoder_8h.html" title=" " alt="" coords="96,79,232,104"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="167,44,167,79,161,79,161,44"/>
+<area shape="rect" id="Node000003" href="$decoder_8c.html" title=" " alt="" coords="5,152,112,177"/>
+<area shape="poly" id="edge4_Node000001_Node000003" title=" " alt="" coords="131,40,107,58,86,80,69,118,62,152,57,151,64,117,82,77,104,54,128,36"/>
+<area shape="rect" id="Node000005" href="$dictionary_8c.html" title=" " alt="" coords="257,79,375,104"/>
+<area shape="poly" id="edge5_Node000001_Node000005" title=" " alt="" coords="202,34,292,76,290,81,199,39"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="137,114,77,154,74,150,134,110"/>
+<area shape="rect" id="Node000004" href="$main_8c.html" title=" " alt="" coords="137,152,226,177"/>
+<area shape="poly" id="edge3_Node000002_Node000004" title=" " alt="" coords="173,117,181,151,176,153,167,118"/>
+</map>

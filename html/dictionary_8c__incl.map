@@ -1,0 +1,15 @@
+<map id="src/dictionary.c" name="src/dictionary.c">
+<area shape="rect" id="Node000001" title=" " alt="" coords="189,5,307,31"/>
+<area shape="rect" id="Node000002" href="$dictionary_8h.html" title=" " alt="" coords="91,79,189,104"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="232,33,171,73,168,69,229,28"/>
+<area shape="rect" id="Node000006" title=" " alt="" coords="213,79,283,104"/>
+<area shape="poly" id="edge5_Node000001_Node000006" title=" " alt="" coords="251,31,251,65,245,65,245,31"/>
+<area shape="rect" id="Node000007" title=" " alt="" coords="308,79,375,104"/>
+<area shape="poly" id="edge6_Node000001_Node000007" title=" " alt="" coords="265,29,317,68,314,72,261,33"/>
+<area shape="rect" id="Node000003" title=" " alt="" coords="5,152,80,177"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="126,106,71,146,68,141,123,102"/>
+<area shape="rect" id="Node000004" title=" " alt="" coords="105,152,175,177"/>
+<area shape="poly" id="edge3_Node000002_Node000004" title=" " alt="" coords="143,104,143,138,137,138,137,104"/>
+<area shape="rect" id="Node000005" title=" " alt="" coords="200,152,283,177"/>
+<area shape="poly" id="edge4_Node000002_Node000005" title=" " alt="" coords="158,102,215,142,212,146,155,106"/>
+</map>
