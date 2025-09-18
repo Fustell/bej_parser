@@ -46,8 +46,8 @@ static DictionaryEntry *find_entry_by_seq(DictionaryEntry *entries,
  * @param is_array_item Flag indicating if the element is inside an array.
  */
 static void BejDecodeName(OutputStream *output_stream,
-                            const DictionaryEntry *entry, bool is_array_item,
-                            bool add_name) {
+                          const DictionaryEntry *entry, bool is_array_item,
+                          bool add_name) {
   if (add_name && !is_array_item && entry && entry->name &&
       entry->name[0] != '\0') {
     OutputStreamWrite(output_stream, "\"", 1);
@@ -57,24 +57,14 @@ static void BejDecodeName(OutputStream *output_stream,
 }
 
 /**
- * @brief Forward declaration for recursive calls.
- */
-static bool BejDecode_stream(OutputStream *output_stream,
-                              InputStream *input_stream,
-                              InputStream *schema_dict,
-                              DictionaryEntry *current_entries,
-                              size_t entry_count, int prop_count,
-                              int indent_level, bool add_name);
-
-/**
  * @brief Decodes a single BEJ element (property) from the stream.
  */
 static bool BejDecode_element(OutputStream *output_stream,
-                               InputStream *input_stream,
-                               InputStream *schema_dict,
-                               DictionaryEntry *current_entries,
-                               size_t entry_count, int indent_level,
-                               bool is_array_item, bool add_name) {
+                              InputStream *input_stream,
+                              InputStream *schema_dict,
+                              DictionaryEntry *current_entries,
+                              size_t entry_count, int indent_level,
+                              bool is_array_item, bool add_name) {
   if (input_stream->pos >= input_stream->size) return true;
 
   uint64_t raw_seq = BejUnpackNNInt(input_stream);
@@ -106,9 +96,9 @@ static bool BejDecode_element(OutputStream *output_stream,
 
       DictionaryEntry child_entries[MAX_DICT_ENTRIES];
       size_t child_entry_count;
-      if (!LoadDictionarySubsetIntoBuffer(
-              schema_dict->data, schema_dict->size, entry->offset,
-              entry->child_count, child_entries, &child_entry_count)) {
+      if (!LoadDictionarySubsetIntoBuffer(schema_dict->data, schema_dict->size,
+                                          entry->offset, entry->child_count,
+                                          child_entries, &child_entry_count)) {
         return false;
       }
 
@@ -116,8 +106,8 @@ static bool BejDecode_element(OutputStream *output_stream,
         if (i > 0) OutputStreamWrite(output_stream, ",", 1);
 
         if (!BejDecode_element(output_stream, input_stream, schema_dict,
-                                child_entries, child_entry_count,
-                                indent_level + 1, false, true)) {
+                               child_entries, child_entry_count,
+                               indent_level + 1, false, true)) {
           return false;
         }
       }
@@ -134,9 +124,9 @@ static bool BejDecode_element(OutputStream *output_stream,
 
       DictionaryEntry child_entries[MAX_DICT_ENTRIES];
       size_t child_entry_count;
-      if (!LoadDictionarySubsetIntoBuffer(
-              schema_dict->data, schema_dict->size, entry->offset,
-              entry->child_count, child_entries, &child_entry_count)) {
+      if (!LoadDictionarySubsetIntoBuffer(schema_dict->data, schema_dict->size,
+                                          entry->offset, entry->child_count,
+                                          child_entries, &child_entry_count)) {
         return false;
       }
 
@@ -146,14 +136,13 @@ static bool BejDecode_element(OutputStream *output_stream,
         JsonWriteIndent(output_stream, indent_level + 1);
 
         if (!BejDecode_element(output_stream, input_stream, schema_dict,
-                                child_entries, child_entry_count,
-                                indent_level + 1, true, false)) {
+                               child_entries, child_entry_count,
+                               indent_level + 1, true, false)) {
           return false;
         }
       }
 
-      if (array_member_count > 0)
-        JsonWriteIndent(output_stream, indent_level);
+      if (array_member_count > 0) JsonWriteIndent(output_stream, indent_level);
 
       OutputStreamWrite(output_stream, "]", 1);
       return true;
@@ -162,7 +151,7 @@ static bool BejDecode_element(OutputStream *output_stream,
       const uint8_t *val = StreamReadBytes(input_stream, length);
       OutputStreamWrite(output_stream, "\"", 1);
       OutputStreamWrite(output_stream, (const char *)val,
-                          length > 0 ? length - 1 : 0);
+                        length > 0 ? length - 1 : 0);
       OutputStreamWrite(output_stream, "\"", 1);
       return true;
     }
@@ -189,9 +178,9 @@ static bool BejDecode_element(OutputStream *output_stream,
       uint64_t enum_seq = BejUnpackNNInt(input_stream);
       DictionaryEntry enum_entries[MAX_DICT_ENTRIES];
       size_t enum_entry_count;
-      if (!LoadDictionarySubsetIntoBuffer(
-              schema_dict->data, schema_dict->size, entry->offset,
-              entry->child_count, enum_entries, &enum_entry_count)) {
+      if (!LoadDictionarySubsetIntoBuffer(schema_dict->data, schema_dict->size,
+                                          entry->offset, entry->child_count,
+                                          enum_entries, &enum_entry_count)) {
         return false;
       }
 
@@ -201,7 +190,7 @@ static bool BejDecode_element(OutputStream *output_stream,
       if (enum_val_entry && enum_val_entry->name) {
         OutputStreamWrite(output_stream, "\"", 1);
         OutputStreamWrite(output_stream, enum_val_entry->name,
-                            strlen(enum_val_entry->name));
+                          strlen(enum_val_entry->name));
         OutputStreamWrite(output_stream, "\"", 1);
       } else {
         OutputStreamWrite(output_stream, "null", 4);
@@ -221,18 +210,18 @@ static bool BejDecode_element(OutputStream *output_stream,
  * @brief Decodes a stream of BEJ elements (e.g., properties of a SET).
  */
 static bool BejDecode_stream(OutputStream *output_stream,
-                              InputStream *input_stream,
-                              InputStream *schema_dict,
-                              DictionaryEntry *current_entries,
-                              size_t entry_count, int prop_count,
-                              int indent_level, bool add_name) {
+                             InputStream *input_stream,
+                             InputStream *schema_dict,
+                             DictionaryEntry *current_entries,
+                             size_t entry_count, int prop_count,
+                             int indent_level, bool add_name) {
   for (int i = 0; i < prop_count; ++i) {
     if (i > 0) {
       OutputStreamWrite(output_stream, ", ", 2);
     }
     if (!BejDecode_element(output_stream, input_stream, schema_dict,
-                            current_entries, entry_count, indent_level, false,
-                            add_name)) {
+                           current_entries, entry_count, indent_level, false,
+                           add_name)) {
       return false;
     }
   }
@@ -243,7 +232,7 @@ static bool BejDecode_stream(OutputStream *output_stream,
  * @brief Main function to decode a BEJ stream.
  */
 bool BejDecode(OutputStream *output_stream, InputStream *input_stream,
-                InputStream *schema_dictionary) {
+               InputStream *schema_dictionary) {
   if (input_stream->size < 7) return false;
 
   uint32_t version = (uint32_t)StreamReadInt(input_stream, 4);
@@ -274,11 +263,11 @@ bool BejDecode(OutputStream *output_stream, InputStream *input_stream,
   DictionaryEntry root_entries[MAX_DICT_ENTRIES];
   size_t root_entry_count;
   if (!LoadDictionarySubsetIntoBuffer(schema_dictionary->data,
-                                          schema_dictionary->size, 0, -1,
-                                          root_entries, &root_entry_count)) {
+                                      schema_dictionary->size, 0, -1,
+                                      root_entries, &root_entry_count)) {
     return false;
   }
 
   return BejDecode_stream(output_stream, input_stream, schema_dictionary,
-                           root_entries, root_entry_count, 1, 0, false);
+                          root_entries, root_entry_count, 1, 0, false);
 }
