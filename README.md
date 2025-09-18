@@ -76,6 +76,7 @@ ctest -V
   - Set
   - Array
   - Null
-- Annotation logic was not implemented
+- Annotation logic is not implemented
 - Code written in Google style(but macros are written to snake case in upper register)
+- No dynamic memory allocation is used for dictionary entries (preallocated buffers only), as a result maximum dictionary entries per subset is 512
 ---
