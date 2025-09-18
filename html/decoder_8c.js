@@ -1,9 +1,9 @@
 var decoder_8c =
 [
-    [ "bej_decode", "decoder_8c.html#a95c583d1b66d6b35188b69a0b146425a", null ],
-    [ "bej_decode_element", "decoder_8c.html#adc44fb0b9a17765f94d6f1fbfe9dd6d8", null ],
-    [ "bej_decode_name", "decoder_8c.html#a5467a98a331e0acf8ea55e545eb79618", null ],
-    [ "bej_decode_stream", "decoder_8c.html#a907a81024b2593e54e24e27adafaa5dc", null ],
-    [ "bej_unpack_nnint", "decoder_8c.html#ac72ba0c9d52f9d25c18c0679f93a51b2", null ],
+    [ "BejDecode", "decoder_8c.html#a366687fc15e6084c78375a4bd0dbf5e6", null ],
+    [ "BejDecode_element", "decoder_8c.html#a6767616ed987371890ea5d620585c57a", null ],
+    [ "BejDecode_stream", "decoder_8c.html#ab0e9cf77aa18b6209f18d6fafa47e500", null ],
+    [ "BejDecodeName", "decoder_8c.html#ab05a7a1886e8e6e4bb94024e3ef5d476", null ],
+    [ "BejUnpackNNInt", "decoder_8c.html#a2ea3ff09a8f1fe5052ad21f81dfbffcf", null ],
     [ "find_entry_by_seq", "decoder_8c.html#a1a7d29f72f8057e4651c9fe38a2cd4f0", null ]
 ];

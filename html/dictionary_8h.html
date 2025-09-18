@@ -97,21 +97,21 @@ $(document).ready(function(){initNavTree('dictionary_8h.html',''); initResizable
   <div class="headertitle"><div class="title">dictionary.h File Reference</div></div>
 </div><!--header-->
 <div class="contents">
-<div class="textblock"><code>#include &lt;stddef.h&gt;</code><br />
+<div class="textblock"><code>#include &lt;stdbool.h&gt;</code><br />
+<code>#include &lt;stddef.h&gt;</code><br />
 <code>#include &lt;stdint.h&gt;</code><br />
-<code>#include &lt;stdbool.h&gt;</code><br />
 </div><div class="textblock"><div class="dynheader">
 Include dependency graph for dictionary.h:</div>
 <div class="dyncontent">
 <div class="center"><img src="dictionary_8h__incl.png" border="0" usemap="#ainclude_2dictionary_8h" alt=""/></div>
 <map name="ainclude_2dictionary_8h" id="ainclude_2dictionary_8h">
-<area shape="rect" title=" " alt="" coords="66,5,214,31"/>
-<area shape="rect" title=" " alt="" coords="5,79,80,104"/>
-<area shape="poly" title=" " alt="" coords="126,33,71,72,68,68,123,29"/>
-<area shape="rect" title=" " alt="" coords="105,79,175,104"/>
-<area shape="poly" title=" " alt="" coords="143,31,143,65,137,65,137,31"/>
-<area shape="rect" title=" " alt="" coords="200,79,283,104"/>
-<area shape="poly" title=" " alt="" coords="158,28,215,68,212,73,155,33"/>
+<area shape="rect" title=" " alt="" coords="75,5,223,31"/>
+<area shape="rect" title=" " alt="" coords="5,79,88,104"/>
+<area shape="poly" title=" " alt="" coords="134,33,76,73,73,68,131,28"/>
+<area shape="rect" title=" " alt="" coords="112,79,187,104"/>
+<area shape="poly" title=" " alt="" coords="152,31,152,65,147,65,147,31"/>
+<area shape="rect" title=" " alt="" coords="211,79,282,104"/>
+<area shape="poly" title=" " alt="" coords="167,29,221,68,218,72,163,33"/>
 </map>
 </div>
 </div><div class="textblock"><div class="dynheader">
@@ -153,12 +153,12 @@ Macros</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:a7c0b43c7d91a981247b2deb0c9c60dc9" id="r_a7c0b43c7d91a981247b2deb0c9c60dc9"><td class="memItemLeft" align="right" valign="top">uint64_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="dictionary_8h.html#a7c0b43c7d91a981247b2deb0c9c60dc9">dict_stream_read_int</a> (<a class="el" href="structDictionaryStream.html">DictionaryStream</a> *stream, size_t size)</td></tr>
-<tr class="memdesc:a7c0b43c7d91a981247b2deb0c9c60dc9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Reads an integer from a dictionary stream.  <br /></td></tr>
-<tr class="separator:a7c0b43c7d91a981247b2deb0c9c60dc9"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a79dce7184c3fc8f5fed2231c3331fdd5" id="r_a79dce7184c3fc8f5fed2231c3331fdd5"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="dictionary_8h.html#a79dce7184c3fc8f5fed2231c3331fdd5">load_dictionary_subset_into_buffer</a> (const uint8_t *data, size_t size, uint16_t offset, int16_t child_count, <a class="el" href="structDictionaryEntry.html">DictionaryEntry</a> *out_entries, size_t *out_count)</td></tr>
-<tr class="memdesc:a79dce7184c3fc8f5fed2231c3331fdd5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Loads a subset of a dictionary into a provided buffer.  <br /></td></tr>
-<tr class="separator:a79dce7184c3fc8f5fed2231c3331fdd5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abf48d1727d8b4de22ce0d0ad426c8d27" id="r_abf48d1727d8b4de22ce0d0ad426c8d27"><td class="memItemLeft" align="right" valign="top">uint64_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="dictionary_8h.html#abf48d1727d8b4de22ce0d0ad426c8d27">DictStreamReadInt</a> (<a class="el" href="structDictionaryStream.html">DictionaryStream</a> *stream, size_t size)</td></tr>
+<tr class="memdesc:abf48d1727d8b4de22ce0d0ad426c8d27"><td class="mdescLeft">&#160;</td><td class="mdescRight">Reads an integer from a dictionary stream.  <br /></td></tr>
+<tr class="separator:abf48d1727d8b4de22ce0d0ad426c8d27"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9fc8d7f54035ae5bca79e7a5393b8953" id="r_a9fc8d7f54035ae5bca79e7a5393b8953"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="dictionary_8h.html#a9fc8d7f54035ae5bca79e7a5393b8953">LoadDictionarySubsetIntoBuffer</a> (const uint8_t *data, size_t size, uint16_t offset, int16_t child_count, <a class="el" href="structDictionaryEntry.html">DictionaryEntry</a> *out_entries, size_t *out_count)</td></tr>
+<tr class="memdesc:a9fc8d7f54035ae5bca79e7a5393b8953"><td class="mdescLeft">&#160;</td><td class="mdescRight">Loads a subset of a dictionary into a provided buffer.  <br /></td></tr>
+<tr class="separator:a9fc8d7f54035ae5bca79e7a5393b8953"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Macro Definition Documentation</h2>
 <a id="a71f8bf8933b0953b76b2b150e9bdbaa7" name="a71f8bf8933b0953b76b2b150e9bdbaa7"></a>
@@ -176,14 +176,14 @@ Functions</h2></td></tr>
 </div>
 </div>
 <h2 class="groupheader">Function Documentation</h2>
-<a id="a7c0b43c7d91a981247b2deb0c9c60dc9" name="a7c0b43c7d91a981247b2deb0c9c60dc9"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a7c0b43c7d91a981247b2deb0c9c60dc9">&#9670;&#160;</a></span>dict_stream_read_int()</h2>
+<a id="abf48d1727d8b4de22ce0d0ad426c8d27" name="abf48d1727d8b4de22ce0d0ad426c8d27"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abf48d1727d8b4de22ce0d0ad426c8d27">&#9670;&#160;</a></span>DictStreamReadInt()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">uint64_t dict_stream_read_int </td>
+          <td class="memname">uint64_t DictStreamReadInt </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="structDictionaryStream.html">DictionaryStream</a> *&#160;</td>
           <td class="paramname"><em>stream</em>, </td>
@@ -214,14 +214,14 @@ Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="a79dce7184c3fc8f5fed2231c3331fdd5" name="a79dce7184c3fc8f5fed2231c3331fdd5"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a79dce7184c3fc8f5fed2231c3331fdd5">&#9670;&#160;</a></span>load_dictionary_subset_into_buffer()</h2>
+<a id="a9fc8d7f54035ae5bca79e7a5393b8953" name="a9fc8d7f54035ae5bca79e7a5393b8953"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9fc8d7f54035ae5bca79e7a5393b8953">&#9670;&#160;</a></span>LoadDictionarySubsetIntoBuffer()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">bool load_dictionary_subset_into_buffer </td>
+          <td class="memname">bool LoadDictionarySubsetIntoBuffer </td>
           <td>(</td>
           <td class="paramtype">const uint8_t *&#160;</td>
           <td class="paramname"><em>data</em>, </td>

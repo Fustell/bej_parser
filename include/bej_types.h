@@ -1,8 +1,8 @@
 /**
  * @file bej_types.h
- * @brief This file contains the definitions of core types and constants for the BEJ parser.
- * All BEJ_FORMAT_ constants correspond to the data types defined in the
- * Binary-encoded JSON specification.
+ * @brief This file contains the definitions of core types and constants for the
+ * BEJ parser. All BEJ_FORMAT_ constants correspond to the data types defined in
+ * the Binary-encoded JSON specification.
  */
 
 #ifndef BEJ_TYPES_H
@@ -51,6 +51,6 @@
 /// @brief Selector for the annotation dictionary.
 #define BEJ_DICTIONARY_SELECTOR_ANNOTATION 0x01
 
-/** @} */ // end of bej_selectors
+/** @} */  // end of bej_selectors
 
 #endif

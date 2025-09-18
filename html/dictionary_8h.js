@@ -4,6 +4,6 @@ var dictionary_8h =
     [ "DictionaryStream", "structDictionaryStream.html", "structDictionaryStream" ],
     [ "DecodedSeq", "structDecodedSeq.html", "structDecodedSeq" ],
     [ "MAX_DICT_ENTRIES", "dictionary_8h.html#a71f8bf8933b0953b76b2b150e9bdbaa7", null ],
-    [ "dict_stream_read_int", "dictionary_8h.html#a7c0b43c7d91a981247b2deb0c9c60dc9", null ],
-    [ "load_dictionary_subset_into_buffer", "dictionary_8h.html#a79dce7184c3fc8f5fed2231c3331fdd5", null ]
+    [ "DictStreamReadInt", "dictionary_8h.html#abf48d1727d8b4de22ce0d0ad426c8d27", null ],
+    [ "LoadDictionarySubsetIntoBuffer", "dictionary_8h.html#a9fc8d7f54035ae5bca79e7a5393b8953", null ]
 ];

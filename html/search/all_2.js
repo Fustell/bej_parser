@@ -5,10 +5,10 @@ var searchData=
   ['decodedseq_2',['DecodedSeq',['../structDecodedSeq.html',1,'']]],
   ['decoder_2ec_3',['decoder.c',['../decoder_8c.html',1,'']]],
   ['decoder_2eh_4',['decoder.h',['../decoder_8h.html',1,'']]],
-  ['dict_5fstream_5fread_5fint_5',['dict_stream_read_int',['../dictionary_8c.html#a7c0b43c7d91a981247b2deb0c9c60dc9',1,'dict_stream_read_int(DictionaryStream *stream, size_t size):&#160;dictionary.c'],['../dictionary_8h.html#a7c0b43c7d91a981247b2deb0c9c60dc9',1,'dict_stream_read_int(DictionaryStream *stream, size_t size):&#160;dictionary.c']]],
-  ['dictionary_20selectors_6',['BEJ Dictionary Selectors',['../group__bej__selectors.html',1,'']]],
-  ['dictionary_2ec_7',['dictionary.c',['../dictionary_8c.html',1,'']]],
-  ['dictionary_2eh_8',['dictionary.h',['../dictionary_8h.html',1,'']]],
-  ['dictionaryentry_9',['DictionaryEntry',['../structDictionaryEntry.html',1,'']]],
-  ['dictionarystream_10',['DictionaryStream',['../structDictionaryStream.html',1,'']]]
+  ['dictionary_20selectors_5',['BEJ Dictionary Selectors',['../group__bej__selectors.html',1,'']]],
+  ['dictionary_2ec_6',['dictionary.c',['../dictionary_8c.html',1,'']]],
+  ['dictionary_2eh_7',['dictionary.h',['../dictionary_8h.html',1,'']]],
+  ['dictionaryentry_8',['DictionaryEntry',['../structDictionaryEntry.html',1,'']]],
+  ['dictionarystream_9',['DictionaryStream',['../structDictionaryStream.html',1,'']]],
+  ['dictstreamreadint_10',['dictstreamreadint',['../dictionary_8c.html#abf48d1727d8b4de22ce0d0ad426c8d27',1,'DictStreamReadInt(DictionaryStream *stream, size_t size):&#160;dictionary.c'],['../dictionary_8h.html#abf48d1727d8b4de22ce0d0ad426c8d27',1,'DictStreamReadInt(DictionaryStream *stream, size_t size):&#160;dictionary.c']]]
 ];

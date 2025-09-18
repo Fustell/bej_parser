@@ -102,21 +102,21 @@ $(document).ready(function(){initNavTree('decoder_8h_source.html',''); initResiz
 <div class="line"><a id="l00002" name="l00002"></a><span class="lineno">    2</span><span class="preprocessor">#define DECODER_H</span></div>
 <div class="line"><a id="l00003" name="l00003"></a><span class="lineno">    3</span> </div>
 <div class="line"><a id="l00004" name="l00004"></a><span class="lineno">    4</span><span class="preprocessor">#include &lt;stdbool.h&gt;</span></div>
-<div class="line"><a id="l00005" name="l00005"></a><span class="lineno">    5</span><span class="preprocessor">#include &quot;<a class="code" href="stream__utils_8h.html">stream_utils.h</a>&quot;</span></div>
+<div class="line"><a id="l00005" name="l00005"></a><span class="lineno">    5</span> </div>
 <div class="line"><a id="l00006" name="l00006"></a><span class="lineno">    6</span><span class="preprocessor">#include &quot;<a class="code" href="dictionary_8h.html">dictionary.h</a>&quot;</span></div>
 <div class="line"><a id="l00007" name="l00007"></a><span class="lineno">    7</span><span class="preprocessor">#include &quot;<a class="code" href="json__writer_8h.html">json_writer.h</a>&quot;</span></div>
-<div class="line"><a id="l00008" name="l00008"></a><span class="lineno">    8</span> </div>
-<div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span><span class="keywordtype">bool</span> <a class="code hl_function" href="decoder_8h.html#a7f47a662da7440d745bb23887e61c426">bej_decode</a>(<a class="code hl_struct" href="structOutputStream.html">OutputStream</a> *out,</div>
-<div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span>                <a class="code hl_struct" href="structInputStream.html">InputStream</a> *bej_input,</div>
-<div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span>                <a class="code hl_struct" href="structInputStream.html">InputStream</a> *schema_dict);</div>
-<div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span> </div>
-<div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span><span class="preprocessor">#endif</span></div>
-<div class="ttc" id="adecoder_8h_html_a7f47a662da7440d745bb23887e61c426"><div class="ttname"><a href="decoder_8h.html#a7f47a662da7440d745bb23887e61c426">bej_decode</a></div><div class="ttdeci">bool bej_decode(OutputStream *out, InputStream *bej_input, InputStream *schema_dict)</div><div class="ttdoc">Decodes a BEJ (Binary Encoded JSON) stream into a JSON output stream.</div><div class="ttdef"><b>Definition</b> decoder.c:265</div></div>
+<div class="line"><a id="l00008" name="l00008"></a><span class="lineno">    8</span><span class="preprocessor">#include &quot;<a class="code" href="stream__utils_8h.html">stream_utils.h</a>&quot;</span></div>
+<div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span> </div>
+<div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span><span class="keywordtype">bool</span> <a class="code hl_function" href="decoder_8h.html#a1c74f171cd46b23d486107d6bf80f76f">BejDecode</a>(<a class="code hl_struct" href="structOutputStream.html">OutputStream</a> *out, <a class="code hl_struct" href="structInputStream.html">InputStream</a> *bej_input,</div>
+<div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span>                <a class="code hl_struct" href="structInputStream.html">InputStream</a> *schema_dict);</div>
+<div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span> </div>
+<div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span><span class="preprocessor">#endif</span></div>
+<div class="ttc" id="adecoder_8h_html_a1c74f171cd46b23d486107d6bf80f76f"><div class="ttname"><a href="decoder_8h.html#a1c74f171cd46b23d486107d6bf80f76f">BejDecode</a></div><div class="ttdeci">bool BejDecode(OutputStream *out, InputStream *bej_input, InputStream *schema_dict)</div><div class="ttdoc">Decodes a BEJ (Binary Encoded JSON) stream into a JSON output stream.</div><div class="ttdef"><b>Definition</b> decoder.c:245</div></div>
 <div class="ttc" id="adictionary_8h_html"><div class="ttname"><a href="dictionary_8h.html">dictionary.h</a></div></div>
 <div class="ttc" id="ajson__writer_8h_html"><div class="ttname"><a href="json__writer_8h.html">json_writer.h</a></div></div>
 <div class="ttc" id="astream__utils_8h_html"><div class="ttname"><a href="stream__utils_8h.html">stream_utils.h</a></div></div>
-<div class="ttc" id="astructInputStream_html"><div class="ttname"><a href="structInputStream.html">InputStream</a></div><div class="ttdoc">A utility structure for reading data from a byte array.</div><div class="ttdef"><b>Definition</b> stream_utils.h:15</div></div>
-<div class="ttc" id="astructOutputStream_html"><div class="ttname"><a href="structOutputStream.html">OutputStream</a></div><div class="ttdoc">A utility structure for writing data to a fixed-size buffer.</div><div class="ttdef"><b>Definition</b> stream_utils.h:26</div></div>
+<div class="ttc" id="astructInputStream_html"><div class="ttname"><a href="structInputStream.html">InputStream</a></div><div class="ttdoc">A utility structure for reading data from a byte array.</div><div class="ttdef"><b>Definition</b> stream_utils.h:14</div></div>
+<div class="ttc" id="astructOutputStream_html"><div class="ttname"><a href="structOutputStream.html">OutputStream</a></div><div class="ttdoc">A utility structure for writing data to a fixed-size buffer.</div><div class="ttdef"><b>Definition</b> stream_utils.h:24</div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->

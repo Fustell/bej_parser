@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['read_5ffile_0',['read_file',['../main_8c.html#ab853b37e003840eaec206c2942b5b368',1,'main.c']]]
+  ['readfile_0',['ReadFile',['../main_8c.html#a902e285fba5e8aecb8d4c44157400c25',1,'main.c']]]
 ];

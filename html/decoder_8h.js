@@ -1,4 +1,4 @@
 var decoder_8h =
 [
-    [ "bej_decode", "decoder_8h.html#a7f47a662da7440d745bb23887e61c426", null ]
+    [ "BejDecode", "decoder_8h.html#a1c74f171cd46b23d486107d6bf80f76f", null ]
 ];
